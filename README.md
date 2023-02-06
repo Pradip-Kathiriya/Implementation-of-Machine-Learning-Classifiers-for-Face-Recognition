@@ -45,12 +45,11 @@ The above figure shows the graph of cumulative data variance vs number of eigen 
 
 ![2](https://user-images.githubusercontent.com/90370308/217113155-4b1a99c9-b94f-4c95-ad91-a4cd22e68cb7.png)![MDA image](https://user-images.githubusercontent.com/90370308/217113192-455497dd-9f88-4c46-b3de-be5a9d33988b.png)
 
-The above figure shows the graph of cumulative data variance vs number of eigen values. As shown in
-the graph, we can say that about 95% of the data variance are containing in top 100 eigen values (out of
-504 eigen values). After 100 eigen values, the rate of change of variance with respect to number of
-eigen value is very small. Hence, to go from 95% to 98%, we need to add 100 more eigen value which
-is computationally expensive. Hence, in MDA compression, top 100 eigen vector are taken. So, the
-data is transformed from 504 dimension to 100 dimension.
+The above figure shows the graph of cumulative data variance vs number of eigen values. As shown in the graph, we can say that about 95% of the data variance are containing in top 100 eigen values (out of 504 eigen values). After 100 eigen values, the rate of change of variance with respect to number of eigen value is very small. Hence, to go from 95% to 98%, we need to add 100 more eigen value which is computationally expensive. Hence, in MDA compression, top 100 eigen vector are taken. So, the data is transformed from 504 dimension to 100 dimension.
+
+**3. Bayes' Classifier:**
+
+
 
 
 
