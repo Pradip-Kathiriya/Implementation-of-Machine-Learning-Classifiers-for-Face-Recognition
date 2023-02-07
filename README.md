@@ -91,7 +91,7 @@ The above figure shows the graph of cumulative data variance vs number of eigen 
 the graph, we can say that about 100% of the data variance are containing in top 1 eigen values (out of
 504 eigen values). After 1 st eigen values, the rate of change of variance with respect to number of eigen
 value almost 0. This is very surprising. This might be due to the face that since we have 360 data points
-for only two classes, MDA might found the best 1 direction where are almost 100% separable.
+for only two classes, MDA might found the best 1 direction where almost all the images are  100 % separable.
 
 **3. Bayes' Classifier:**
 - Optimal Parameters 
