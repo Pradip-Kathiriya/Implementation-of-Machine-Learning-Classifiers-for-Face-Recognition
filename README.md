@@ -63,6 +63,14 @@ The above figure shows the graph of cumulative data variance vs number of eigen 
   
 ![face_knn_PCA](https://user-images.githubusercontent.com/90370308/217147991-858e565a-41c8-4e3c-8b3f-6220665b6b6d.png)![face_knn_MDA](https://user-images.githubusercontent.com/90370308/217148008-93a359a7-16f9-4905-bf5a-cdad25db8f59.png)
 
+As we can see in the above graph of k-NN with PCA and MDA, the highest
+accuracy is achieved for k = 2 (which is equal to the number of data of each class in
+the train set). After that further increase in k has little impact on the accuracy and it
+decreases once it go beyond 6.
+Also, note that in this experiment if the value of k is even and if there are equal number of neighbor of
+two classes, the classification will be done considering 1-NN rule.
+
+
 
 
 
