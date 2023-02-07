@@ -93,6 +93,47 @@ the graph, we can say that about 100% of the data variance are containing in top
 value almost 0. This is very surprising. This might be due to the face that since we have 360 data points
 for only two classes, MDA might found the best 1 direction where are almost 100% separable.
 
+**3. Bayes' Classifier:**
+- Optimal Parameters 
+  1. Top 60 eigen value in PCA analysis
+  2. Top 60 eigen value in MDA analysis
+  3. 90% data in training and 10% in testing
+- Test accuracy 
+  1. PCA – 92.5% 
+  2. MDA – 77.5%
+
+![PCA_NvsF_Bayes_lam](https://user-images.githubusercontent.com/90370308/217149660-874408bd-0608-49d7-b0c3-6a29f181de4b.png)
+![MDA_NvsF_Bayes_lam](https://user-images.githubusercontent.com/90370308/217149677-9474fdb9-466c-43b0-bb87-f88e62631a6c.png)
+![PCA_NvsF_Bayes_train](https://user-images.githubusercontent.com/90370308/217149737-a731a9d3-3c47-4f71-b6c5-40d9b063ce5c.png)
+![MDA_NvsF_Bayes_train](https://user-images.githubusercontent.com/90370308/217149764-0ee0d216-b706-4b39-89eb-43a7b2fe3b19.png)
+
+The first two graphs show how test accuracy change with number of eigen value in MDA and PCA
+analysis. Since we have large number of data for both the classes, data can be compressed in relatively
+low dimension and we can achieve maximum test accuracy with top 60% eigen values.
+The third and forth graph shows how test accuracy change with splitting of training and testing data. It
+can be said that test accuracy is almost independent of this ratio. However, if we have more data intraining, model can generalize well on the future data. Hence, we take 90% data into training and 10%
+data in the testing.
+
+**4. k-NN rule:**
+- Optimal Parameters
+  1. Top 60 eigen value in PCA analysis
+  2. Top 60 eigen value in MDA analysis
+  3. 90% data in training and 10% in testing
+  4. K = 5
+ - Test Accuracy
+  1. PCA - 50.0%
+  2. MDA - 47.5%
+
+![11](https://user-images.githubusercontent.com/90370308/217150896-6ebeb413-632d-471e-a0b4-3ef2f19436ce.png)
+![12](https://user-images.githubusercontent.com/90370308/217150923-8af26aba-70c5-40bc-bd70-da0b78914ae7.png)
+![13](https://user-images.githubusercontent.com/90370308/217150933-01addd48-418a-4278-8190-d2ed0cbf335e.png)
+![14](https://user-images.githubusercontent.com/90370308/217150943-b54e57ad-71c7-453c-b439-b3c6c96a2be5.png)
+
+  
+
+
+
+
 
 
 
