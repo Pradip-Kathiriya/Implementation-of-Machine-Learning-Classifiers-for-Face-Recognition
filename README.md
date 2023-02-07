@@ -130,7 +130,64 @@ data in the testing.
 ![14](https://user-images.githubusercontent.com/90370308/217150943-b54e57ad-71c7-453c-b439-b3c6c96a2be5.png)
 
   
+**5. Support Vector Machine with RBF Kernel:**
 
+- Optimal Parameters
+  1. Top 60 eigen value in PCA analysis
+  2. Top 60 eigen value in MDA analysis
+  3. 80% data in training and 20% in testing
+  4. &sigma;<sup>2</sup> = 3
+
+- Test Accuracy:
+  1. PCA - 83.75%
+  2. MDA - 77.50%
+
+![15](https://user-images.githubusercontent.com/90370308/217151343-2a830d75-57f6-4487-8766-c318072798fe.png)
+![16](https://user-images.githubusercontent.com/90370308/217151359-7c6032c1-60d2-42bf-84f2-a82282e00cec.png)
+![17](https://user-images.githubusercontent.com/90370308/217151381-9f6f844b-dff6-4c1d-a970-67f82bbde563.png)
+![18](https://user-images.githubusercontent.com/90370308/217151393-6e7d9298-e5b6-4863-b9a4-7f666abe1c42.png)
+
+**5. Support Vector Machine with polynomial Kernel:**
+
+- Optimal Parameters
+  1. Top 60 eigen value in PCA analysis
+  2. Top 60 eigen value in MDA analysis
+  3. 80% data in training and 20% in testing
+  4. r = 2
+
+- Test Accuracy:
+  1. PCA - 70.0%
+  2. MDA - 71.25%
+
+![19](https://user-images.githubusercontent.com/90370308/217152121-a083f4d0-38f7-4efd-902d-67749f2fdf7f.png)
+![20](https://user-images.githubusercontent.com/90370308/217152131-1cc2138c-6896-495f-8ad0-45e85a31f1a1.png)
+![21](https://user-images.githubusercontent.com/90370308/217152194-d768558b-30dd-4649-aa8e-600de83e4e78.png)
+![22](https://user-images.githubusercontent.com/90370308/217152235-b24e558a-59f4-45f6-97d3-4909add8ede1.png)
+
+
+**6. Boosted SVM:**
+
+- Optimal Parameters
+  1. Top 60 eigen value in PCA analysis
+  2. Top 60 eigen value in MDA analysis
+  3. 90% data in training and 10% in testing
+  4. Number of Iteration : n = 8
+
+- Test Accuracy:
+  1. PCA - 94.5 %
+  2. MDA - 93.0 %
+
+![23](https://user-images.githubusercontent.com/90370308/217152486-e0d6eea6-bdbe-4cf0-b48c-aeaf3178b7ca.png)
+![24](https://user-images.githubusercontent.com/90370308/217152496-d7d0e580-a2fb-43a7-83c3-e00b238d9a04.png)
+
+# Requirement
+Python 2.0 or above
+
+# License
+
+ [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+Copyright (c) Feb 2023 Pradip Kathiriya
 
 
 
