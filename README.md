@@ -48,6 +48,22 @@ The above figure shows the graph of cumulative data variance vs number of eigen 
 The above figure shows the graph of cumulative data variance vs number of eigen values. As shown in the graph, we can say that about 95% of the data variance are containing in top 100 eigen values (out of 504 eigen values). After 100 eigen values, the rate of change of variance with respect to number of eigen value is very small. Hence, to go from 95% to 98%, we need to add 100 more eigen value which is computationally expensive. Hence, in MDA compression, top 100 eigen vector are taken. So, the data is transformed from 504 dimension to 100 dimension.
 
 **3. Bayes' Classifier:**
+- Optimal Parameter : Top 80 Eigen Value for PCA and MDA
+- Test Accuracy:
+  1. PCA : 57.0%
+  2. MDA : 53.0% 
+
+![3](https://user-images.githubusercontent.com/90370308/217146754-1800b7a9-4dd0-4e06-b324-86f785b81495.png)![4](https://user-images.githubusercontent.com/90370308/217146948-77b360fd-8b1c-4449-9b14-ea9ab44a4b4b.png)
+
+**4. K-NN Rule:**
+- Optimal Parameter : k = 2
+- Test Accuracy:
+  1. PCA : 54.0%
+  2. MDA : 52.5%
+  
+![face_knn_PCA](https://user-images.githubusercontent.com/90370308/217147991-858e565a-41c8-4e3c-8b3f-6220665b6b6d.png)![face_knn_MDA](https://user-images.githubusercontent.com/90370308/217148008-93a359a7-16f9-4905-bf5a-cdad25db8f59.png)
+
+
 
 
 
