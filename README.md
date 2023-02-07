@@ -70,6 +70,30 @@ decreases once it go beyond 6.
 Also, note that in this experiment if the value of k is even and if there are equal number of neighbor of
 two classes, the classification will be done considering 1-NN rule.
 
+## Neutral vs Expression Classification
+
+**1. PCA Analysis:**
+
+![PCA_NvsF](https://user-images.githubusercontent.com/90370308/217148684-471258c0-0589-4fa5-a0ee-a9d72a02f1b6.png)
+
+The above figure shows the graph of cumulative data variance vs number of eigen values. As shown in
+the graph, we can say that about 92% of the data variance are containing in top 100 eigen values (out of
+504 eigen values). After 100 eigen values, the rate of change of variance with respect to number of
+eigen value is very small. Hence, to go from 92% to 95%, we need to add 100 more eigen value which
+is computationally expensive. Hence, in PCA compression, top 100 eigen vector are taken. So, the data
+is transformed from 504 dimension to 100 dimension.
+
+**2. MDA analysis:**
+
+![MDA_NvsF](https://user-images.githubusercontent.com/90370308/217148803-022a2c75-9057-4f3f-b9cc-fa9aae72620b.png)
+
+The above figure shows the graph of cumulative data variance vs number of eigen values. As shown in
+the graph, we can say that about 100% of the data variance are containing in top 1 eigen values (out of
+504 eigen values). After 1 st eigen values, the rate of change of variance with respect to number of eigen
+value almost 0. This is very surprising. This might be due to the face that since we have 360 data points
+for only two classes, MDA might found the best 1 direction where are almost 100% separable.
+
+
 
 
 
