@@ -1,7 +1,6 @@
 # Project Description
 
-The goal of this project is to implement different classifiers to achieve face recogntion.
-You are given a set of faces and their corresponding labels. The given data set is divided in training and testing set is used to train the classifiers.
+The goal of this project is to implement different classifiers to achieve face recognition. You are given a set of faces and their corresponding labels. The given data set is divided into training and a testing set is used to train the classifiers.
 
 There are two tasks:
 1. Identifying the subject label from a test image.
